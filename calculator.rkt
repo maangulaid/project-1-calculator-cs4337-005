@@ -56,7 +56,8 @@
     (let ([result (evaluate tokens)])
       (if (and result (null? (second result)))
           (displayln (real->double-flonum (first result)))
-          (displayln "Error: Invalid Expression")))))
+          (displayln "Error")))))
+          
 
 ;; Example usage
 (run "+ 3 4") ; => 7.0
